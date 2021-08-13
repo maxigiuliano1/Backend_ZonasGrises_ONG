@@ -20,6 +20,7 @@ import java.util.List;
 @ApiIgnore
 @RestController
 @RequestMapping("/organization")
+@CrossOrigin("http://127.0.0.1:5500")
 @RequiredArgsConstructor
 public class OrganizationController {
 

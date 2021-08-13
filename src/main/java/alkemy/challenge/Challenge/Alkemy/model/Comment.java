@@ -27,6 +27,48 @@ public class Comment implements Serializable {
     @JoinColumn(name = "comments_user")
     private User userId;
 
+    /**
+     * @return the body
+     */
+    public String getBody() {
+        return body;
+    }
+
+    /**
+     * @param body the body to set
+     */
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    /**
+     * @return the userId
+     */
+    public User getUserId() {
+        return userId;
+    }
+
+    /**
+     * @param userId the userId to set
+     */
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }
+
+    /**
+     * @return the newsId
+     */
+    public News getNewsId() {
+        return newsId;
+    }
+
+    /**
+     * @param newsId the newsId to set
+     */
+    public void setNewsId(News newsId) {
+        this.newsId = newsId;
+    }
+
     @ManyToOne
     @JoinColumn(name = "comments_news")
     private News newsId;
